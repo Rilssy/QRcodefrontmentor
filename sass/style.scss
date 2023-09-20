@@ -1,0 +1,56 @@
+@import './colors';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+// html {
+// 	font-size: 62.5%;
+// }
+
+body {
+	height: 100vh;
+	background-color: $Lightgray;
+	font-family: 'Outfit', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.qr {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		background-color: $White;
+		width: 320px;
+		height: 500px;
+		border-radius: 20px;
+	}
+
+	&__img {
+		margin: 15px auto;
+		height: 290px;
+		width: 290px;
+		border-radius: 10px;
+	}
+	&__title {
+		color: $Darkblue;
+		text-align: center;
+		font-weight: bold;
+		width: 280px;
+		font-size: 15px;
+		margin: 10px auto;
+	}
+
+	&__text {
+		color: $Grayishblue;
+		text-align: center;
+		font-size: 15px;
+		margin: 10px 30px;
+
+	}
+}
